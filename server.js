@@ -6,7 +6,7 @@ const bot = require('./bot');
 
 const PORT = process.env.PORT || 8080;
 const MAX_PLAYERS = 8;
-const TRACK_COUNT = 5;
+const TRACK_COUNT = 20; // 5 классических + 15 новых (7 асфальтовых и 8 off-road)
 
 const server = http.createServer((req, res) => {
   if (bot.handle(req, res)) return; // запросы от Telegram
